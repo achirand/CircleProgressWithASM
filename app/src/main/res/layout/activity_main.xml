@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.littlejie.app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_reset_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重置" />
+
+        <com.littlejie.circleprogress.CircleProgress
+            android:id="@+id/circle_progress_bar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:antiAlias="true"
+            app:arcWidth="@dimen/medium"
+            app:bgArcColor="@color/colorAccent"
+            app:bgArcWidth="@dimen/medium"
+            app:hint="hint"
+            android:visibility="visible"
+            app:hintSize="15sp"
+            app:maxValue="100"
+            app:startAngle="270"
+            app:sweepAngle="90"
+            app:unit="step"
+            app:unitSize="15sp"
+            app:value="50"
+            app:valueSize="25sp" />
+
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="add" />
+
+
+
+        <Button
+            android:id="@+id/reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="reduce" />
+
+
+    </LinearLayout>
+</ScrollView>
